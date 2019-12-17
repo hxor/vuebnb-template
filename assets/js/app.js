@@ -8,6 +8,8 @@ var app = new Vue({
             headerImage: {
                 'background-image': 'url(./assets/images/header.jpg)'
             }
-        }
+        },
+        amenities: sample.amenities,
+        prices: sample.prices
     }
 });
