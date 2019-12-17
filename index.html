@@ -56,6 +56,9 @@
       </div>
     </div>
     <div id="modal" :class="{show: modalOpen}">
+      <button @click="modalOpen = false" class="modal-close">
+        &times;
+      </button>
       <div class="modal-content">
         <img src="./assets/images/header.jpg" alt="">
       </div>
