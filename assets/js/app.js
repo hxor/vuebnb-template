@@ -10,6 +10,7 @@ var app = new Vue({
             }
         },
         amenities: sample.amenities,
-        prices: sample.prices
+        prices: sample.prices,
+        contracted: true
     }
 });
