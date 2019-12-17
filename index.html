@@ -16,7 +16,9 @@
   </div>
   <div id="app">
     <div class="header">
-      <div class="header-img" :style="style.headerImage"></div>
+      <div class="header-img" :style="style.headerImage" @click="style.modalOpen = true">
+        <button class="view-photos">View</button>
+      </div>
     </div>
     <div class="container">
       <div class="heading">
@@ -26,8 +28,8 @@
       <hr>
       <div class="about">
         <h3>About this listing</h3>
-        <p :class="{contracted: contracted}">{{ about }}</p>
-        <button class="more" @click="contracted = false" v-if="contracted">+ More</button>
+        <p :class="{contracted: style.contracted}">{{ about }}</p>
+        <button class="more" @click="style.contracted = false" v-if="style.contracted">+ More</button>
       </div>
       <div class="lists">
         <hr>
@@ -51,6 +53,11 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div id="modal" :class="{show: style.modalOpen}">
+      <div class="modal-content">
+        <img src="./assets/images/header.jpg" alt="">
       </div>
     </div>
   </div>

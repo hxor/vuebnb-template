@@ -4,13 +4,16 @@ var app = new Vue({
         title: sample.title,
         address: sample.address,
         about: sample.about,
+        amenities: sample.amenities,
+        prices: sample.prices,
+        amenities: sample.amenities,
+        prices: sample.prices,
         style: {
             headerImage: {
                 'background-image': 'url(./assets/images/header.jpg)'
-            }
+            },
+            contracted: true,
+            modalOpen: false
         },
-        amenities: sample.amenities,
-        prices: sample.prices,
-        contracted: true
     }
 });
