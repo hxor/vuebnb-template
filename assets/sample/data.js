@@ -20,11 +20,11 @@ var sample = {
     },
     {
       title: 'TV',
-      icon: 'fa-television'
+      icon: 'fa-tv'
     },
     {
       title: 'Kitchen',
-      icon: 'fa-cutlery'
+      icon: 'fa-utensils'
     },
     {
       title: 'Breakfast',
