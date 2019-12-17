@@ -16,7 +16,7 @@
   </div>
   <div id="app">
     <div class="header">
-      <div class="header-img" :style="style.headerImage" @click="style.modalOpen = true">
+      <div class="header-img" :style="style.headerImage" @click="modalOpen = true">
         <button class="view-photos">View</button>
       </div>
     </div>
@@ -55,7 +55,7 @@
         </div>
       </div>
     </div>
-    <div id="modal" :class="{show: style.modalOpen}">
+    <div id="modal" :class="{show: modalOpen}">
       <div class="modal-content">
         <img src="./assets/images/header.jpg" alt="">
       </div>
